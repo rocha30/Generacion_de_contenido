@@ -1,8 +1,9 @@
 // Lectura de beats y duraciones para los scripts de Node (misma fórmula que src/lib/tiempo.ts).
 import {readFileSync} from 'node:fs';
 import path from 'node:path';
+import {fileURLToPath} from 'node:url';
 
-export const RAIZ = path.resolve(new URL('..', import.meta.url).pathname);
+export const RAIZ = path.resolve(fileURLToPath(new URL('..', import.meta.url)));
 export const FPS = 30;
 export const CREDITOS_S = 25;
 
