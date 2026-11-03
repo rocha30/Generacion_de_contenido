@@ -1,0 +1,33 @@
+{
+  "name": "video-ambitos-tablas-simbolos",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Actividad 01 Construcción de Compiladores (UVG): ¿Qué pasa cuando dos variables tienen el mismo nombre?",
+  "license": "CC-BY-4.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "guion": "node scripts/generar-guion.mjs",
+    "dev": "remotion studio",
+    "medir": "node scripts/medir-audio.mjs",
+    "marcas": "node scripts/marcas.mjs",
+    "typecheck": "tsc --noEmit",
+    "stills": "node scripts/stills.mjs",
+    "render": "remotion render Video renders/corte-visual.mp4 --codec=h264",
+    "render:final": "remotion render Video renders/video-final.mp4 --codec=h264 --audio-codec=aac"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.540",
+    "@remotion/google-fonts": "4.0.540",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.540"
+  },
+  "devDependencies": {
+    "@remotion/bundler": "^4.0.540",
+    "@remotion/renderer": "^4.0.540",
+    "@types/react": "19.1.8",
+    "typescript": "5.8.3"
+  }
+}
