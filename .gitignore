@@ -2,6 +2,7 @@ node_modules/
 out/
 renders/*.mp4
 !renders/corte-visual.mp4
+!renders/video-final.mp4
 renders/stills/
 renders/*.png
 public/narracion/*.wav
