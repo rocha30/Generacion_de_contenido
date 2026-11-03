@@ -1,0 +1,8 @@
+node_modules/
+out/
+renders/*.mp4
+!renders/corte-visual.mp4
+renders/stills/
+renders/*.png
+public/narracion/*.wav
+.DS_Store
